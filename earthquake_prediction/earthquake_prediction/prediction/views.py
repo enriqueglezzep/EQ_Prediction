@@ -5,7 +5,7 @@ import pandas as pd
 
 
 def load_depth_model():
-    model_path = "Define your Model path"
+    model_path = "prediction/prediction_model/depth.h5"
     depth_model = joblib.load(model_path)
     return depth_model
 
