@@ -1,0 +1,24 @@
+Depth prediction in Earthquakes using Machine Learning techniques
+
+This project was developed by Muhammad Ibraheem, Javier Melo and Enrique Gonzalez for Neural Networks subject
+
+The code included in this Github repository is described below
+
+1.- Import necessary libraries to apply Machine learning tools
+2.- Load database in csv format and assign to a dataframe
+3.- Show a sample of 5 records and the structure of the dataframe using head instruction, 
+4.- Dataset selected has many null values, due this, was decided to identify expendables features to drop out
+5.- Dataset includes more than one type of event, it was applied a filter to select only earthquake types
+6.- Feature extraction considered 6 columns (Date, Time, Latitude, Longitud, Depth and Magnitud)
+7.- Among the data is possible to find some outliers, to identify the code has a boxplot graph function
+8.- Correlation matrix was depicted with a minimal correlation between features (latitude, longitude, Depth, Magnitude)
+9.- The datasets include many locations described by longitude and latitudes, this locations was showed in a map
+10.- A column with dates turns into a challenge to deal with time calculations, due this, was necessary to delete three record with different format and split dates in years, months and days
+11.- Once dataset was preprocessed, the model selection is applied, the first step is split data into train and test data
+12.- The first Model introduced in this project was Random Forest Regressor with an acceptable accuracy of 0.8389, 
+13.- An hyperparameter tunning is applied to the model
+14.- A second model with a Multiple Linear Regression algorith is used to get a better accuracy, however, accuracy of this model was 0.019
+15.- Afterwards, a Decission tree algorithm was applied with an accuracy of 0.67, nevertheless, it doesn't outperform the random forest model
+16.- The next algorithm used was an ANN, it was applied obtaining an accuracy of 0.050
+17.- According to the result of the obtained predictions, Random Forests results as the best model to implement for cloud service
+18.- Best fitted model was save in a file to link with Django and show the results throughout Heroku
